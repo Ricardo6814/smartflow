@@ -1,0 +1,11 @@
+.crm-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f1f5f9;
+}
+
+.crm-layout__content {
+  flex: 1;
+  padding: 1.5rem 2rem;
+  overflow-x: auto;
+}

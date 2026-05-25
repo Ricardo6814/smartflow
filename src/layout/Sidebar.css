@@ -1,0 +1,98 @@
+.sidebar {
+  width: 260px;
+  min-height: 100vh;
+  background: #0f172a;
+  color: #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.sidebar__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 1.25rem 1rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-bottom: 1px solid #1e293b;
+  color: #fff;
+}
+
+.sidebar__brand-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.sidebar__nav {
+  padding: 0.75rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.sidebar__link,
+.sidebar__group-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.15s, color 0.15s;
+}
+
+.sidebar__link:hover,
+.sidebar__group-toggle:hover {
+  background: #1e293b;
+  color: #f8fafc;
+}
+
+.sidebar__link--active,
+.sidebar__group-toggle--active {
+  background: #fff;
+  color: #0f172a;
+}
+
+.sidebar__link--nested {
+  padding-left: 2.5rem;
+  font-size: 0.85rem;
+}
+
+.sidebar__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.25rem;
+  color: inherit;
+}
+
+.sidebar__group-label {
+  flex: 1;
+}
+
+.sidebar__group-toggle .chevron-icon {
+  margin-left: auto;
+  color: inherit;
+  transition: transform 0.2s;
+}
+
+.sidebar__group-toggle .chevron-icon--open {
+  transform: rotate(180deg);
+}
+
+.sidebar__submenu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  margin: 0.15rem 0 0.35rem;
+}
