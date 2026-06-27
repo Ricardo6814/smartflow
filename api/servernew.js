@@ -3,7 +3,6 @@ require("dotenv").config();
 const express = require("express");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
-
 const pool = require("./database");
 const authMiddleware = require("./middleware");
 
@@ -38,7 +37,7 @@ app.post("/login", async (req, res) => {
       });
     }
 
-    // valida senha (seguro)
+    
     const senhaValida = await bcrypt.compare(senha, user.senha);
 
     if (!senhaValida) {
